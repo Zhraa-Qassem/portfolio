@@ -1,0 +1,264 @@
+@media (min-width: 3835px) {
+    /* Styles for extremely large screens */
+    h1 {
+      font-size: 300px;
+    }
+  
+    .speech-bubble {
+      max-width: 800px;
+      height: 400px;
+      padding: 40px;
+    }
+  
+    .education,
+    #baby-care-app,
+    #sign-up-page,
+    #smart-glove,
+    #hospital-website,
+    #pharmacy-system,
+    #gallery-website,
+    .proj {
+      width: 3000px;
+      margin: 200px auto;
+      padding: 100px;
+    }
+  }
+  
+@media (min-width: 1025px) {
+    h1 {
+      font-size: 120px;
+    }
+  
+    .speech-bubble {
+      max-width: 400px;
+      height: 200px;
+      padding: 10px;
+    }
+  
+    .education,
+    #baby-care-app,
+    #sign-up-page,
+    #smart-glove,
+    #hospital-website,
+    #pharmacy-system,
+    #gallery-website,
+    .proj {
+      width: 80vw;
+      margin: 40px auto;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Styles for very large screens */
+    h1 {
+      font-size: 150px;
+    }
+  
+    .speech-bubble {
+      max-width: 500px;
+      height: 250px;
+      padding: 15px;
+    }
+  
+    .education,
+    #baby-care-app,
+    #sign-up-page,
+    #smart-glove,
+    #hospital-website,
+    #pharmacy-system,
+    #gallery-website,
+    .proj {
+      width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+    }
+  }
+@media (max-width: 1024px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 50px;
+    }
+    .speech-bubble {
+      max-width: 200px;
+      height: 100px;
+      padding: 5px;
+    }
+    .education {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+    }
+    #baby-care-app {
+      display: grid;
+      grid-template-columns: 1fr;
+      background-color: yellow;
+      padding: 10px;
+      width: 100%;
+      margin: auto;
+    }
+    
+
+    #sign-up-page {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #smart-glove {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #hospital-website {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #pharmacy-system {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #gallery-website {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    .proj {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .card2 {
+      width: 100%;
+      margin: 20px 0px;
+    }
+    .courses-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .welcome {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+    }
+    .welcome img {
+      margin: 20px 0px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .speech-bubble {
+      max-width: 200px;
+      height: 100px;
+      padding: 5px;
+    }
+    .education {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+    }
+    #baby-care-app {
+      display: grid;
+      grid-template-columns: 1fr;
+      background-color: yellow;
+      padding: 10px;
+      width: 100%;
+      margin: auto;
+    }
+    .speech-bubble1:before {
+      display: none;
+    }
+    .speech-bubble:before {
+      display: none;
+    }
+
+    #sign-up-page {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #smart-glove {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #hospital-website {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #pharmacy-system {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    #gallery-website {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    .proj {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+
+    .proj h2 {
+      margin: 0px;
+    }
+  }

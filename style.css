@@ -1,0 +1,388 @@
+body {
+  /* background-image: linear-gradient(135deg, #ffeb99, #FFD460, #e68ab8); */
+  background-image: url('images/images.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Bangers", sans-serif;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  @keyframes Color-change{
+    0%{
+      color:#346303;
+    }
+    
+    20%{
+      color:#07536e;
+    }
+    
+    40%{
+      color:#ca940c;
+    }
+    
+    60%{
+      color:#f33913;
+    }
+    
+    80%{
+      color:#e8192e;
+    }
+    
+    100%{
+      color:#4419b0;
+    }
+  }
+  h1 {
+    font-size: 100px;
+    font-family: "Action Comics", cursive;
+    text-align: center;
+   animation: Color-change 2s linear  infinite ;
+  }
+  
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  #first-intro {
+    margin-left: 10%;
+  }
+  
+  .welcome img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 100px;
+  }
+  
+  .welcome .speech-bubble {
+    position: relative;
+  }
+  
+  .speech-bubble1 {
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    color: #333333;
+  }
+  
+  .speech-bubble1:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 40px solid #ffffff;
+    border-bottom: 20px solid transparent;
+    margin: 60px 0 0 -40px;
+    left: 0px;
+  }
+  
+  .speech-bubble {
+  width: 200px;
+  height: 20px; 
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  margin: 1.5%;
+  font-size: 30px;
+}
+
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 20px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  margin: 25px 0 0 -20px;
+  left: 0px;
+}
+
+
+  
+  .sections {
+    margin: 30px;
+  }
+  
+  .sections h2 {
+    font-family: "Action Comics", cursive;
+    font-size: 40px;
+    animation: color-change 2s linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes letter_explode {
+    100% {
+      letter-spacing: 0.1em;
+      opacity: 1;
+    }
+  
+    100% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+  }
+  
+  .projects h2:hover {
+    animation-name: letter_explode;
+    animation: letter_explode 2s linear;
+  }
+  
+  .card {
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .card2 {
+    width: 80vw;
+    height: 90px;
+    background-color: rgb(188, 11, 11);
+    border-radius: 10px;
+    padding: 40px;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projects p{font-size: 20px;
+  padding: 30px;
+  
+  }
+  .projects h2{
+    color: white;
+  }
+  
+  
+  #baby-care-app  {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    grid-template-rows: auto;
+    background-color: yellow;
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+    
+  }
+  #baby-care-app  h2{
+    color: #333333;}
+    #baby-care-app  p{
+      color: #333333;}
+  
+  
+  
+  #smart-glove  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    background-color: rgb(59, 186, 31);
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+  
+  }
+  
+  #hospital-website {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: auto;
+     background-color: rgb(20, 137, 210);
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+  }
+  
+  #hospital-website h2{
+    color: #ffffff;
+  }
+  
+  #pharmacy-system {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    background-color: rgb(172, 9, 99);
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+  }
+  #pharmacy-system h2{
+    color: #ffffff;
+  }
+  
+  #gallery-website {
+    background-color: rgb(24, 22, 22);
+    padding-left: 50px;
+    width: 90vw;
+    margin: 30px;
+    text-align: center;
+  }
+  
+  #gallery-website h2 {
+    color: #ffffff;
+  }
+  
+  #gallery-website p {
+    color: #ffffff;
+  }
+  
+  
+  .education {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+    grid-template-rows: auto;
+    background-color: rgb(188, 11, 11);
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+    border-radius: 10px;  
+  }
+  
+  .education h2 {
+    color: white;
+  }
+  
+  .proj {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    grid-template-rows: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 30px;
+    background-color: cadetblue ;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  #sign-up-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    background-color: rgb(49, 29, 149);
+    padding-left: 20px;
+    width: 90vw;
+    margin: 30px;
+  }
+  
+  .courses-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+  
+      .course {
+        padding: 20px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 10px;
+      }
+  
+      .course h2 {
+        font-family: "Action Comics", cursive;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      .course p {
+        font-size: 18px;
+      }
+
+footer {
+  background-image: url('images/ims3.jpg');
+  font-family: "Bangers", sans-serif;
+  color: #333333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  padding-left: 25px;
+  margin: 40px;
+  align-items: center;
+  width: 60vw;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Action Comics", cursive;
+  color: #000000;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #14a2b4;
+}
+
+footer a:hover {
+  color: #d8d5d5;
+}
+
+footer a:active {
+  color: #1a30d0;
+}
+
+/* form styles */
+form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Bangers", sans-serif;
+  color: #333333;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333333;
+  font-family: "Bangers", sans-serif;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #FFD460;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e68ab8;
+}
