@@ -14,88 +14,90 @@ body {
 }
 
 
-  @keyframes Color-change{
-    0%{
-      color:#346303;
-    }
-    
-    20%{
-      color:#07536e;
-    }
-    
-    40%{
-      color:#ca940c;
-    }
-    
-    60%{
-      color:#f33913;
-    }
-    
-    80%{
-      color:#e8192e;
-    }
-    
-    100%{
-      color:#4419b0;
-    }
+@keyframes Color-change {
+  0% {
+    color: #346303;
   }
-  h1 {
-    font-size: 100px;
-    font-family: "Action Comics", cursive;
-    text-align: center;
-    color: #030545;
-   /* animation: Color-change 2s linear  infinite ; */
+
+  20% {
+    color: #07536e;
   }
-  
-  .welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
+
+  40% {
+    color: #ca940c;
   }
-  
-  #first-intro {
-    margin-left: 10%;
+
+  60% {
+    color: #f33913;
   }
-  
-  .welcome img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin-right: 100px;
+
+  80% {
+    color: #e8192e;
   }
-  
-  .welcome .speech-bubble {
-    position: relative;
+
+  100% {
+    color: #4419b0;
   }
-  
-  .speech-bubble1 {
-    width: auto;
-    height: auto;
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 24px;
-    text-align: center;
-    position: relative;
-    color: #333333;
-  }
-  
-  .speech-bubble1:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-right: 40px solid #ffffff;
-    border-bottom: 20px solid transparent;
-    margin: 60px 0 0 -40px;
-    left: 0px;
-  }
-  
-  .speech-bubble {
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Action Comics", cursive;
+  text-align: center;
+  color: #030545;
+  /* animation: Color-change 2s linear  infinite ; */
+}
+
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+#first-intro {
+  margin-left: 10%;
+}
+
+.welcome img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.welcome .speech-bubble {
+  position: relative;
+}
+
+.speech-bubble1 {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  color: #333333;
+}
+
+.speech-bubble1:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 40px solid #ffffff;
+  border-bottom: 20px solid transparent;
+  margin: 60px 0 0 -40px;
+  left: 0px;
+}
+
+.speech-bubble {
   width: 200px;
-  height: 20px; 
+  height: 20px;
   background: #ffffff;
   border-radius: 20px;
   padding: 5px;
@@ -119,214 +121,231 @@ body {
 }
 
 
-  
-  .sections {
-    margin: 30px;
-  }
-  
-  .sections h2 {
-    font-family: "Action Comics", cursive;
-    font-size: 60px;
-    animation: color-change 2s linear;
-    animation-iteration-count: infinite;
 
+.sections {
+  margin: 30px;
+}
+
+.sections h2 {
+  font-family: "Action Comics", cursive;
+  font-size: 60px;
+  animation: color-change 2s linear;
+  animation-iteration-count: infinite;
+
+}
+
+.sections p {
+  font-size: 30px;
+}
+
+@keyframes letter_explode {
+  100% {
+    letter-spacing: 0.1em;
+    opacity: 1;
   }
-  .sections p {
-    font-size: 30px;
+
+  100% {
+    letter-spacing: 1em;
+    opacity: 0;
   }
-  
-  @keyframes letter_explode {
-    100% {
-      letter-spacing: 0.1em;
-      opacity: 1;
-    }
-  
-    100% {
-      letter-spacing: 1em;
-      opacity: 0;
-    }
-  }
-  
-  .projects h2:hover {
-    animation-name: letter_explode;
-    animation: letter_explode 2s linear;
-  }
-  
-  .card {
-    width: auto;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 40px;
-    color: #000000;
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .card2 {
-    width: 80vw;
-    height: 90px;
-    background-color:  rgb(117, 7, 7);
-    border-radius: 10px;
-    padding: 40px;
-    color: #ffffff;
-    font-size: 25px;
-    text-align: center;
-    align-self: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .projects p{font-size: 20px;
+}
+
+.projects h2:hover {
+  animation-name: letter_explode;
+  animation: letter_explode 2s linear;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80vw;
+  height: 120px;
+  background-color: rgb(117, 7, 7);
+  border-radius: 10px;
+  padding: 40px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.projects p {
+  font-size: 20px;
   padding: 30px;
-  
-  }
-  .projects h2{
-    color: white;
-  }
-  
-  
-  #baby-care-app  {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    gap: 40px;
-    grid-template-rows: auto;
-    background-color: yellow;
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-    
-  }
-  #baby-care-app  h2{
-    color: #333333;}
-    #baby-care-app  p{
-      color: #333333;}
-  
-  
-  
-  #smart-glove  {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-    grid-template-rows: auto;
-    background-color: rgb(59, 186, 31);
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-  
-  }
-  
-  #hospital-website {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    grid-template-rows: auto;
-     background-color: rgb(20, 137, 210);
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-  }
-  
-  #hospital-website h2{
-    color: #ffffff;
-  }
-  
-  #pharmacy-system {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 10px;
-    grid-template-rows: auto;
-    background-color: rgb(172, 9, 99);
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-  }
-  #pharmacy-system h2{
-    color: #ffffff;
-  }
-  
-  #gallery-website {
-    background-color: rgb(24, 22, 22);
-    padding-left: 50px;
-    width: 90vw;
-    margin: 30px;
-    text-align: center;
-  }
-  
-  #gallery-website h2 {
-    color: #ffffff;
-  }
-  
-  #gallery-website p {
-    color: #ffffff;
-  }
-  
-  
-  .education {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    gap: 40px;
-    grid-template-rows: auto;
-    background-color: rgb(117, 7, 7);
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-    border-radius: 10px;  
-  }
-  
-  .education h2 {
-    color: white;
-  }
-  
-  .proj {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr;
-    gap: 20px;
-    grid-template-rows: auto;
-    padding-top: 20px;
-    padding-left: 20px;
-    margin: 30px;
-    background-color: cadetblue ;
-    border-radius: 10px;
-    width: fit-content;
-    height: fit-content;
-  }
-  
-  #sign-up-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    grid-template-rows: auto;
-    background-color: rgb(49, 29, 149);
-    padding-left: 20px;
-    width: 90vw;
-    margin: 30px;
-  }
-  
-  .courses-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-      }
-  
-      .course {
-        padding: 20px;
-        background-color: #ffffff;
-        border: 2px solid #000000;
-        border-radius: 10px;
-      }
-  
-      .course h2 {
-        font-family: "Action Comics", cursive;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-  
-      .course p {
-        font-size: 18px;
-      }
+
+}
+
+.projects h2 {
+  color: white;
+}
+
+
+#baby-care-app {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 40px;
+  grid-template-rows: auto;
+  background-color: yellow;
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+
+}
+
+#baby-care-app h2 {
+  color: #333333;
+}
+
+#baby-care-app p {
+  color: #333333;
+}
+
+
+
+#smart-glove {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  background-color: rgb(59, 186, 31);
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+
+}
+
+#hospital-website {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  grid-template-rows: auto;
+  background-color: rgb(20, 137, 210);
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+}
+
+#hospital-website h2 {
+  color: #ffffff;
+}
+
+#pharmacy-system {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  background-color: rgb(172, 9, 99);
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+}
+
+#pharmacy-system h2 {
+  color: #ffffff;
+}
+
+#gallery-website {
+  background-color: rgb(24, 22, 22);
+  padding-left: 50px;
+  width: 90vw;
+  margin: 30px;
+  text-align: center;
+}
+
+#gallery-website h2 {
+  color: #ffffff;
+}
+
+#gallery-website p {
+  color: #ffffff;
+}
+
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 40px;
+  grid-template-rows: auto;
+  background-color: rgb(117, 7, 7);
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.education h2 {
+  color: white;
+}
+
+.proj {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  gap: 20px;
+  grid-template-rows: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 30px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+#sign-up-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  background-color: rgb(49, 29, 149);
+  padding-left: 20px;
+  width: 90vw;
+  margin: 30px;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.course h2 {
+  font-family: "Action Comics", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 18px;
+}
 
 footer {
   background-image: url('images/ims3.jpg');
@@ -341,12 +360,13 @@ footer {
   align-items: center;
   width: 60vw;
 }
+
 footer a {
   text-decoration: none;
   font-family: "Action Comics", cursive;
   color: #000000;
   font-size: 60px;
-  text-shadow: 2px 2px 4px #14a2b4;
+  text-shadow: 2px 2px 4px #d4dfe0;
 }
 
 footer a:hover {
@@ -356,16 +376,42 @@ footer a:hover {
 footer a:active {
   color: #1a30d0;
 }
+footer .speech-bubble{
+  height: 70px;
+  width: 300px;
+}
 
+
+
+/* cards style */
+
+.contact-page {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto ;
+  gap: 50px;
+  padding-left: 20px;
+  width: auto;
+  margin: 30px;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+.contact-page .speech-bubble1{
+  height: 100px;
+  width: 500px;
+}
 /* form styles */
-form {
-  background-color: #ffffff;
+.contact-page form {
+  background-image: url('images/sky.jpg');
   padding: 40px;
   border-radius: 10px;
-  max-width: 400px;
+  width: 50vw;
   margin: 0 auto;
   font-family: "Bangers", sans-serif;
-  color: #333333;
+  color: #000000;
+  align-self: center;
 }
 
 form input,
@@ -390,4 +436,23 @@ form button {
 
 form button:hover {
   background-color: #e68ab8;
+}
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+  }
 }
