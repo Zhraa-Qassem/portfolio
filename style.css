@@ -43,7 +43,8 @@ body {
     font-size: 100px;
     font-family: "Action Comics", cursive;
     text-align: center;
-   animation: Color-change 2s linear  infinite ;
+    color: #030545;
+   /* animation: Color-change 2s linear  infinite ; */
   }
   
   .welcome {
@@ -125,9 +126,13 @@ body {
   
   .sections h2 {
     font-family: "Action Comics", cursive;
-    font-size: 40px;
+    font-size: 60px;
     animation: color-change 2s linear;
     animation-iteration-count: infinite;
+
+  }
+  .sections p {
+    font-size: 30px;
   }
   
   @keyframes letter_explode {
@@ -161,7 +166,7 @@ body {
   .card2 {
     width: 80vw;
     height: 90px;
-    background-color: rgb(188, 11, 11);
+    background-color:  rgb(117, 7, 7);
     border-radius: 10px;
     padding: 40px;
     color: #ffffff;
@@ -185,7 +190,7 @@ body {
   
   #baby-care-app  {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1.5fr;
     gap: 40px;
     grid-template-rows: auto;
     background-color: yellow;
@@ -203,7 +208,7 @@ body {
   
   #smart-glove  {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
     grid-template-rows: auto;
     background-color: rgb(59, 186, 31);
@@ -215,7 +220,7 @@ body {
   
   #hospital-website {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
     grid-template-rows: auto;
      background-color: rgb(20, 137, 210);
@@ -230,7 +235,7 @@ body {
   
   #pharmacy-system {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
     grid-template-rows: auto;
     background-color: rgb(172, 9, 99);
@@ -264,7 +269,7 @@ body {
     grid-template-columns: 1fr 1.5fr 1fr;
     gap: 40px;
     grid-template-rows: auto;
-    background-color: rgb(188, 11, 11);
+    background-color: rgb(117, 7, 7);
     padding-left: 20px;
     width: 90vw;
     margin: 30px;
@@ -277,7 +282,7 @@ body {
   
   .proj {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr 1fr;
     gap: 20px;
     grid-template-rows: auto;
     padding-top: 20px;
